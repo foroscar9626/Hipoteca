@@ -18,7 +18,7 @@
       <div class="row">
         <div class="col-lg-4">
           <!-- Formulario -->
-          <form class="" action="/" method="post">
+          <form id="formulario" class="" action="/" method="post">
             <div class="form-group">
               <label class="form-label" for="">Tipo Vivienda</label>
               <select class="form-select" name="tipoVivienda">
@@ -31,13 +31,25 @@
             <div class="form-group">
               <label class="form-label" for="">Años Hipoteca</label>
               <select class="form-select" name="annos">
+                <option value="...">...</option>
+
                 <option value="20">20</option>
                 <option value="25">25</option>
                 <option value="30">30</option>
               </select>
             </div>
+            <br>
+            <div class="form-group">
+              <label class="form-label" for="">Interes Nominal Mensual</label>
+              <select class="form-select" name="interes">
+                <option value="...">...</option>
 
-            <input type="submit" class="btn btn-lg btn-danger mt-5" name="" value="CALCULAR">
+                <option value="0.0012">0.12%</option>
+                <option value="0.0025">0.25%</option>
+                <option value="0.0030">0.30%</option>
+              </select>
+            </div>
+            <input type="button" class="botonEnviar btn btn-lg btn-danger mt-5" name="" value="CALCULAR">
           </form>
         </div>
         <div class="col-lg-8 text-center">
